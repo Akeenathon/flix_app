@@ -1,6 +1,6 @@
 import requests
 import streamlit as st
-import login.service import logout
+from login.service import logout
 
 
 class ActorRepository:

@@ -3,7 +3,7 @@ import plotly.express as px
 from movies.service import MovieService
 
 
-def show_home()
+def show_home():
     movie_service = MovieService()
     movie_stats = movie_service.get_movies_stats()
 

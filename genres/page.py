@@ -5,7 +5,7 @@ from genres.service import GenreService
 
 
 def show_genres():
-    genres_service = GenreService()
+    genre_service = GenreService()
     genres = genre_service.get_genres()
 
     if genres:
@@ -22,7 +22,7 @@ def show_genres():
     st.title('Cadastrar novo Gênero')
     name = st.text_input('Nome do Gênero')
     if st.button('Cadastrar'):
-        new_genre = genres_service.create_genre(
+        new_genre = genre_service.create_genre(
             name=name
         )
         if new_genre:

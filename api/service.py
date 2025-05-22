@@ -4,7 +4,7 @@ import requests
 class Auth:
 
     def __init__(self):
-        self.__base_url = 'https://akeenathon.pythonanywhere.com/api/v1/' # link da API (flix_api)
+        self.__base_url = 'https://akeenathon.pythonanywhere.com/api/v1/'  # link da API (flix_api)
         self.__auth_url = f'{self.__base_url}authentication/token/'
 
     def get_token(self, username, password):
@@ -18,7 +18,7 @@ class Auth:
             'username': username,
             'password': password
         }
-        auth_response =requests.post(
+        auth_response = requests.post(
             self.__auth_url,
             data=auth_payload
         )
